@@ -146,14 +146,12 @@
       </div>
 
       <div class="red-panda">
-              <div class="red-panda">
-        <img srcset="media/1200fox.jpg 1200w,
-                     media/fox600.jpg 600w"
-             sizes="(max-width: 600px) 600px,
-                            1200px"
-             src="media/1200fox.jpg"
-             alt="Firefox Download Logo">
-      </div>
+             <picture>
+          <source media="(max-width: 600px)" srcset="media/1200fox.jpg">
+          <source media="(min-width: 601px)" srcset="media/fox600.jpg">
+          <img src="media/fox600.jpg" alt="Firefox Download Logo">
+        </picture>
+     
       </div>
 
     </main>
